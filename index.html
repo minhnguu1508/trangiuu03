@@ -1,42 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang Web Bé iu</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERRY CHRISTMAS</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <div class="container">
-    <img id="khoc" src="anh1.jpg" alt="Ảnh chính" />
-    <div class="content">
-      <h2>Đu du mít me bây bì (tmai)?</h2>
-      <p>Thoát hoặc không chọn là "Có" đó nha!</p>
+    <div id="as" class="christmas-message">Merry Christmas</div>
+    <div class="tree-container">
+        <img src="big_tree.png " alt="Cây thông" class="tree-icon">
     </div>
-    <div class="buttons">
-      <button id="green-btn" class="btn green">Yes babe</button>
-      <button id="red-btn" class="btn red">No</button>
+
+    <div class="container">
+        <button id="showButton">
+            Thiệp nè TRang iuu<3
+        </button>
     </div>
-  </div>
-  <script src="script.js"></script>
+
+    <div id="guideInfo" class="hidden">
+        <button id="closeButton" class="close-btn">X</button>
+        <div id="ax" class="card">
+            <div class="imgBox">
+                <div class="bark"></div>
+                <img
+                    src="trangg.jpg">
+            </div>
+            <div class="details">
+                <h4 class="color2 margin">(MERRY CHRISTMAS)</h4>
+                <p>Giáng Sinh đến rồi.</p>
+                <p>Chúc em yêu mùa lễ ấm áp và ngọt</p>
+                <p>ngào như tình yêu của chúng ta.</p>
+                <p>Cảm ơn em đã luôn bên cạnh anh.</p>
+                <p>Hy vọng chúng ta sẽ mãi mãi  </p> 
+                <p> bên nhau như vậy và có thêm </p>  
+                <p> nhiều kỷ niệm đẹp trong năm tới</p>
+                 <p class="text-right">Chúc mừng Giáng Sinh. Em Yêu!</p>
+                <p class="text-right">♥Nhật Minh♥</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
-
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chèn nhạc vào Website</title>
+    <title>Auto Play Music</title>
 </head>
 <body>
-    <h1>click vào đây trước nè Trangiuuuu</h1>
-    <!-- Chèn nhạc với thẻ audio -->
-    <audio controls>
-        <source src="maylaai.mp3" type="audio/mpeg">
-                
+    
+    <p>     </p>
+    <audio id="background-music" loop>
+        <source src="giangsinh.mp3 " type="audio/mpeg">   
     </audio>
+    <script>
+        
+        document.body.addEventListener('click', function () {
+            const music = document.getElementById('background-music');
+            if (music.paused) {
+                music.play();
+            }
+        });
+    </script>
 </body>
-</html>>
+</html>
